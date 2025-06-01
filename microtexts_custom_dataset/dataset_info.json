@@ -1,0 +1,39 @@
+{
+    "description": "A dataset of argumentative relations from microtexts, with argument pairs and relation types (support, rebut, undercut, add).",
+    "citation": "@inproceedings{peldszus2015annotated,\\n  title={An annotated corpus of argumentative microtexts},\\n  author={Peldszus, Andreas and Stede, Manfred},\\n  booktitle={Proceedings of the First Conference on Argumentation, Lisbon, Portugal},\\n  year={2015}\\n}",
+    "homepage": "https://github.com/peldszus/arg-microtexts",
+    "license": "CC BY-NC-SA 4.0",
+    "features": {
+        "argument1": {
+            "dtype": "string",
+            "_type": "Value"
+        },
+        "argument2": {
+            "dtype": "string",
+            "_type": "Value"
+        },
+        "relation_label": {
+            "names": [
+                "reb",
+                "sup",
+                "und",
+                "add",
+                "exa"
+            ],
+            "_type": "ClassLabel"
+        },
+        "relation_type_str": {
+            "dtype": "string",
+            "_type": "Value"
+        }
+    },
+    "splits": {
+        "train": {
+            "name": "train",
+            "num_bytes": 234646,
+            "num_examples": 1209
+        }
+    },
+    "download_size": 234646,
+    "dataset_size": 234646
+}
